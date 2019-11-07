@@ -1,3 +1,2 @@
-# Anjuke
-安居客爬虫
-爬取安居客房源信息
+# Auto-LNMP
+## 自动化安装php nginx mysql工具

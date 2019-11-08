@@ -4,6 +4,14 @@
 1. 安装php版本为php7.1.27，nginx版本为openresty-1.13.6.2.tar
 2. php.ini,php-fpm.conf,nginx.conf配置文件会自动创建或更新
 
+
+# Use
+1. cd /home 
+2. git clone https://github.com/BoHongtao/Auto-LNMP.git
+3. chmod +x install.sh
+4. wait.....
+
+
 # Command
 ## nginx 重载配置
 `/home/openresty/nginx/sbin/nginx -c /home/openresty/nginx/conf/nginx.conf`

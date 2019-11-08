@@ -13,6 +13,7 @@
 
 ## 查看进程
 `ps -ef|grep php-fpm`
+
 `ps -ef|grep nginx`
 
 ## Kill

@@ -37,11 +37,10 @@ yum -y install cpan
 yum -y install perl*
 yum -y install readline-devel pcre-devel openssl-devel gcc
 
-
+echo "******************* create user and group www successful **************"
 useradd www -d /home/www -m
 groupadd www
 usermod -G www www
-
 
 
 rm -rf ${php_tar_dir}
@@ -66,3 +65,10 @@ cp ${run_dir}/conf/nginx.conf /home/openresty/nginx/conf/nginx.conf
 mkdir /home/openresty/nginx/conf/vhosts
 
 echo "******************* install nginx successful *****************************"
+
+/usr/local/php/sbin/php-fpm -c /usr/local/php/etc/php.ini -y /usr/local/php/etc/php-fpm.conf
+echo "******************* php-fpm run  successful ******************************"
+/home/openresty/nginx/sbin/nginx -c /home/openresty/nginx/conf/nginx.conf
+/home/openresty/nginx/sbin/nginx -s reload
+echo "******************* nginx run  successful *********************************"
+

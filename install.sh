@@ -48,6 +48,7 @@ rm -rf ${php_tar_dir}
 tar -zxvf ${php_gz_file} && cd ${php_tar_dir} && ./configure  --prefix=/usr/local/php --localstatedir=/usr/local/var --enable-bcmath --enable-calendar --enable-dba --enable-exif  --enable-gd-native-ttf --enable-mbregex --enable-mbstring --enable-shmop --enable-soap --enable-sockets --enable-sysvmsg --enable-sysvsem --enable-sysvshm --enable-wddx --enable-zip  --with-gd --with-gettext --with-mhash  --with-xmlrpc --with-zlib --with-readline --without-gmp --without-snmp  --with-openssl --enable-fpm  --with-curl --with-xsl  --disable-phpdbg --enable-zend-signals --with-pgsql --with-pdo-pgsql --with-freetype-dir --with-pdo-mysql && make && make install
 
 cp ${run_dir}/conf/php.ini /usr/local/php/lib/php.ini
+cp ${run_dir}/conf/www.conf  /usr/local/php/etc/php-fpm.d
 ln -s /usr/local/php/bin/php /usr/bin/php
 rm -rf /usr/local/php/etc/php-fpm.d
 mkdir /usr/local/php/etc/php-fpm.d

@@ -7,6 +7,7 @@
 # Command
 ## nginx 重载配置
 `/home/openresty/nginx/sbin/nginx -c /home/openresty/nginx/conf/nginx.conf`
+`/home/openresty/nginx/sbin/nginx -s reload`
 
 ## php-fpm 启动
 `/usr/local/php/sbin/php-fpm -c /usr/local/php/etc/php.ini -y /usr/local/php/etc/php-fpm.conf`

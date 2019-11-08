@@ -59,7 +59,7 @@ echo "******************* install php successful *****************************"
 
 # install openResty
 rm -rf ${nginx_tar_dir}
-tar -zxvf ${nginx_gz_file} && cd ${nginx_tar_dir} && ./configure --prefix=/home/openresty && make && make install
+cd .. && tar -zxvf ${nginx_gz_file} && cd ${nginx_tar_dir} && ./configure --prefix=/home/openresty && make && make install
 
 cp ${run_dir}/conf/nginx.conf /home/openresty/nginx/conf/nginx.conf
 mkdir /home/openresty/nginx/conf/vhosts

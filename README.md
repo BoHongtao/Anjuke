@@ -1,6 +1,6 @@
 # Auto-LNMP
 
-## 自动化安装php nginx mysql工具
+## CentOS下自动化安装php nginx mysql工具
 1. 安装php版本为php7.1.27，nginx版本为openresty-1.13.6.2.tar
 2. php.ini,php-fpm.conf,nginx.conf配置文件会自动创建或更新
 3. 默认php-fpm和nginx子线程均使用www用户运行，脚本会自动创建www用户及用户组
